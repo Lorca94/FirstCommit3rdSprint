@@ -40,14 +40,14 @@ export const FiltroHabilidades = () => {
               );
             })}
           </datalist>
-          <div style={{display:'flex'}}>
+          <div style={{ display: "flex" }}>
             <input
               type="search"
-              id='search-etiqueta'
+              id="search-etiqueta"
               placeholder="Escribe para buscar etiquetas"
               list="habilidades"
             />
-            <button className="btn btn-ghost" type="button" >
+            <button className="btn btn-ghost" type="button">
               <DataSaverOnIcon />
             </button>
           </div>

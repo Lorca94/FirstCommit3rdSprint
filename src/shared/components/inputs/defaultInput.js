@@ -19,13 +19,19 @@ export const DefaultInput = ({
       {({ field, form }) => (
         <FormControl className="form-control">
           <FormLabel className="form-label" htmlFor={name}>
-            <div style={{ display: "flex", textTransform: "Capitalize",width:'100%' }}>
+            <div
+              style={{
+                display: "flex",
+                textTransform: "Capitalize",
+                width: "100%",
+              }}
+            >
               {label}
               {props.isRequired && <div className="primary-color">*</div>}
             </div>
           </FormLabel>
 
-          <div style={{display:'flex'}}>
+          <div style={{ display: "flex" }}>
             <Input
               {...field}
               className="form-input-text"
@@ -39,11 +45,8 @@ export const DefaultInput = ({
                 {show ? <VisibilityIcon /> : <VisibilityOffIcon />}
               </Button>
             )}
-
           </div>
-          <div className="form-error">
-            {form.errors[name]}
-          </div>
+          <div className="form-error">{form.errors[name]}</div>
         </FormControl>
       )}
     </Field>

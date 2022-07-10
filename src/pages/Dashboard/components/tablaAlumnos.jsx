@@ -22,24 +22,24 @@ export const TablaAlumnos = () => {
   const handleOpen = () => {
     console.log(openModal);
     setOpenModal(true);
-  }
+  };
 
   const handleClose = () => {
     setOpenModal(false);
-  }
-  
+  };
+
   const onHandleChange = (e) => {
     setInputSearchValue(e.target.value);
   };
 
   const modalStyle = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
     width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
+    bgcolor: "background.paper",
+    border: "2px solid #000",
     boxShadow: 24,
     pt: 2,
     px: 4,
@@ -62,7 +62,7 @@ export const TablaAlumnos = () => {
       if (i.email.toLowerCase().includes(inputSearchValue.toLowerCase())) {
         return i;
       }
-      
+
       return null;
     });
     return values;
@@ -107,19 +107,19 @@ export const TablaAlumnos = () => {
           Añadir alumno
         </button>
         <Modal
-      hideBackdrop
-      open={openModal}
-      onClose={handleClose}
-      aria-labelledby="child-modal-title"
-      aria-describedby="child-modal-description"
-    >
-      <Box sx={{ ...modalStyle, width: 800 }}>
-        <h2 id="child-modal-title">Registro de Alumnos</h2>
-        <RegisterAlumno />
-        </Box>
-      </Modal>
+          hideBackdrop
+          open={openModal}
+          onClose={handleClose}
+          aria-labelledby="child-modal-title"
+          aria-describedby="child-modal-description"
+        >
+          <Box sx={{ ...modalStyle, width: 800 }}>
+            <h2 id="child-modal-title">Registro de Alumnos</h2>
+            <RegisterAlumno />
+          </Box>
+        </Modal>
       </div>
-      
+
       <div className="table">
         <TableContainer>
           <Table sx={{ minWidth: 650 }} aria-label="tabla alumnos">
@@ -137,24 +137,64 @@ export const TablaAlumnos = () => {
             <TableBody>
               {alumnos.map((index) => {
                 return (
-                    <TableRow key={index.id}>
-                      <TableCell style={{cursor:'pointer'}} onClick={() => {navigate('/ficha/'+ index.id)}}>{index.nombreCompleto}</TableCell>
-                      <TableCell style={{cursor:'pointer'}} onClick={() => {navigate('/ficha/'+ index.id)}}>{index.ciudad}</TableCell>
-                      <TableCell style={{cursor:'pointer'}} onClick={() => {navigate('/ficha/'+ index.id)}}>{index.pais}</TableCell>
-                      <TableCell style={{cursor:'pointer'}} onClick={() => {navigate('/ficha/'+ index.id)}}>{index.telefono}</TableCell>
-                      <TableCell style={{cursor:'pointer'}} onClick={() => {navigate('/ficha/'+ index.id)}}>{index.email}</TableCell>
-                      <TableCell style={{cursor:'pointer'}} onClick={() => {navigate('/ficha/'+ index.id)}}>
-                        <div className="certificaciones">
-                          {index.certificaciones.map((index, key) => {
-                            return key < 3 ? (
-                              <div className="certificacion">{index}</div>
-                            ) : key === 3 ? (
-                              <div className="certificacion">...</div>
-                            ) : null;
-                          })}
-                        </div>
-                      </TableCell>
-                    </TableRow>
+                  <TableRow key={index.id}>
+                    <TableCell
+                      style={{ cursor: "pointer" }}
+                      onClick={() => {
+                        navigate("/ficha/" + index.id);
+                      }}
+                    >
+                      {index.nombreCompleto}
+                    </TableCell>
+                    <TableCell
+                      style={{ cursor: "pointer" }}
+                      onClick={() => {
+                        navigate("/ficha/" + index.id);
+                      }}
+                    >
+                      {index.ciudad}
+                    </TableCell>
+                    <TableCell
+                      style={{ cursor: "pointer" }}
+                      onClick={() => {
+                        navigate("/ficha/" + index.id);
+                      }}
+                    >
+                      {index.pais}
+                    </TableCell>
+                    <TableCell
+                      style={{ cursor: "pointer" }}
+                      onClick={() => {
+                        navigate("/ficha/" + index.id);
+                      }}
+                    >
+                      {index.telefono}
+                    </TableCell>
+                    <TableCell
+                      style={{ cursor: "pointer" }}
+                      onClick={() => {
+                        navigate("/ficha/" + index.id);
+                      }}
+                    >
+                      {index.email}
+                    </TableCell>
+                    <TableCell
+                      style={{ cursor: "pointer" }}
+                      onClick={() => {
+                        navigate("/ficha/" + index.id);
+                      }}
+                    >
+                      <div className="certificaciones">
+                        {index.certificaciones.map((index, key) => {
+                          return key < 3 ? (
+                            <div className="certificacion">{index}</div>
+                          ) : key === 3 ? (
+                            <div className="certificacion">...</div>
+                          ) : null;
+                        })}
+                      </div>
+                    </TableCell>
+                  </TableRow>
                 );
               })}
             </TableBody>

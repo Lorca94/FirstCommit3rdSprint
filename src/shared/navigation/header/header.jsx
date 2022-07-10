@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Menu, MenuItem } from "@mui/material";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { useNavigate } from "react-router";
 
 export const Header = () => {

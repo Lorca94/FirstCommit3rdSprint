@@ -71,7 +71,7 @@ export const RegisterAlumno = () => {
                   placeholder="Introduce tu numero de teléfono"
                 />
 
-                <div style={{display:'flex',width:'100%',gap:'35px'}}>
+                <div style={{ display: "flex", width: "100%", gap: "35px" }}>
                   <DefaultInput
                     showValidation="false"
                     label="País"
@@ -103,9 +103,25 @@ export const RegisterAlumno = () => {
                   <option>Java</option>
                   <option>Spring</option>
                 </select>
-                <div style={{display:'flex', width:'100%', justifyContent:'space-around'}}>
-                  <button className="btn btn-primary" type="submit">Guardar alumno</button>
-                  <button className="btn btn-ghost" type="button" onClick={()=>{window.location.reload();}}>Cancelar</button>
+                <div
+                  style={{
+                    display: "flex",
+                    width: "100%",
+                    justifyContent: "space-around",
+                  }}
+                >
+                  <button className="btn btn-primary" type="submit">
+                    Guardar alumno
+                  </button>
+                  <button
+                    className="btn btn-ghost"
+                    type="button"
+                    onClick={() => {
+                      window.location.reload();
+                    }}
+                  >
+                    Cancelar
+                  </button>
                 </div>
               </div>
             </Form>

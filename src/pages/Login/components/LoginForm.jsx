@@ -28,7 +28,7 @@ const LoginForm = () => {
 
   const submitLogin = (values) => {
     login(values.email, values.password);
-    navigate('/dashboard');
+    navigate("/dashboard");
   };
 
   return (
@@ -74,11 +74,15 @@ const LoginForm = () => {
               </div>
 
               <div style={{ marginTop: "36px" }} className="justify-spaced">
-                <button style={{maxWidth:'160px'}} className="btn btn-primary" type="submit">
+                <button
+                  style={{ maxWidth: "160px" }}
+                  className="btn btn-primary"
+                  type="submit"
+                >
                   Iniciar sesión
                 </button>
                 <button
-                style={{maxWidth:'160px'}}
+                  style={{ maxWidth: "160px" }}
                   className="btn btn-ghost"
                   onClick={() => navigate("/registro")}
                 >

@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import './styles/candidatos-list.scss'
-import './index.css';
-import FcRoutes from './Rutas/FcRoutes.jsx';
+import './styles/App.scss';
+
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FcRoutes />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

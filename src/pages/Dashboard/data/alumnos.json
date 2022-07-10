@@ -1,0 +1,65 @@
+[
+  {
+    "id":0,
+    "nombreCompleto":"Alvaro Sanchez Monteagudo",
+    "ciudad":"Valencia",
+    "pais":"España",
+    "telefono":"+34657852546",
+    "email":"smonteagudo@gmail.com",
+    "certificaciones":["HTML&CSS","Angular","React","Java"]
+  },
+  {
+    "id":1,
+    "nombreCompleto":"Javier Rodriguez Manta",
+    "ciudad":"Murcia",
+    "pais":"España",
+    "telefono":"+34135485489",
+    "email":"javierRo@gmail.com",
+    "certificaciones":["Angular","React","Java"]
+  },
+  {
+    "id":2,
+    "nombreCompleto":"Antonia Martinez Iniesta",
+    "ciudad":"Castellón",
+    "pais":"España",
+    "telefono":"+34654813285",
+    "email":"anMaIn@mail.com",
+    "certificaciones":["HTML&CSS","Spring","Hibernate","Java"]
+  },
+  {
+    "id":3,
+    "nombreCompleto":"Alvaro Sanchez Monteagudo",
+    "ciudad":"Valencia",
+    "pais":"España",
+    "telefono":"+34657852546",
+    "email":"smonteagudo@gmail.com",
+    "certificaciones":["HTML&CSS","Angular","React","Java"]
+  },
+  {
+    "id":4,
+    "nombreCompleto":"Alvaro Sanchez Monteagudo",
+    "ciudad":"Valencia",
+    "pais":"España",
+    "telefono":"+34657852546",
+    "email":"smonteagudo@gmail.com",
+    "certificaciones":["HTML&CSS","Angular","React","Java"]
+  },
+  {
+    "id":5,
+    "nombreCompleto":"Alvaro Sanchez Monteagudo",
+    "ciudad":"Valencia",
+    "pais":"España",
+    "telefono":"+34657852546",
+    "email":"smonteagudo@gmail.com",
+    "certificaciones":["HTML&CSS","Angular","React","Java"]
+  },
+  {
+    "id":6,
+    "nombreCompleto":"Alvaro Sanchez Monteagudo",
+    "ciudad":"Valencia",
+    "pais":"España",
+    "telefono":"+34657852546",
+    "email":"smonteagudo@gmail.com",
+    "certificaciones":["HTML&CSS","Angular","React","Java"]
+  }
+]
